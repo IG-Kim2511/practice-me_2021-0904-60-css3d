@@ -49,14 +49,36 @@
     transform: rotateY(180deg);
 }
 
-      .world:hover .card-side-front {
-            transform: rotateY(180deg);
-        }
-        .world:hover .card-side-back {
-            transform: rotateY(360deg);
-        }
+.world:hover .card-side-front {
+    transform: rotateY(180deg);
+}
+.world:hover .card-side-back {
+    transform: rotateY(360deg);
+}
 
 
+.container{
+    background-color: aqua;
+     height: 80vh;
+     display: flex;
+     justify-content: space-around;
+     align-items: flex-start;
+}
+.item{
+    padding: 2em;
+    border: 3px solid black;
+
+    flex-grow: 1;
+    flex-basis: 0;
+
+    
+
+}
+.item:nth-child(1) {flex-grow: 1;}
+.item:nth-child(2) {flex-grow: 2;}
+.item:nth-child(3) {flex-grow: 3;}
+.item:nth-child(4) {flex-grow: 4;}
+.item:nth-child(5) {flex-grow: 5;}
 
     </style>
 </head>
@@ -65,6 +87,14 @@
     <div class="world">
         <div class="card-side card-side-front">a</div>
         <div class="card-side card-side-back">b</div>
+    </div>
+
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
     </div>
     
 </body>
